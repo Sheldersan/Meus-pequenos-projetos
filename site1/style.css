@@ -1,0 +1,107 @@
+@font-face {
+    font-family:'demo';
+    src: url('fontes/Bratsy\ Script\ Demo.otf') format('opentype') url('fontes/Bratsy\ Script\ Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    /*
+    tipos de format()
+    opentype (otf)
+    truetype (ttf)
+    embedded-opentype 
+    truetype-aat (apple advenced typography)
+    svg
+    */
+}
+@font-face {
+    font-family:'simplesth' ;
+    src: url('fontes/SimpleThread_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+nav{
+    
+    text-align: end;
+    text-decoration: none;
+    margin-top: -20px;
+    padding-bottom: 5px;
+    
+    
+    
+    
+}
+a{
+    text-decoration: none;
+    border: none;
+    padding: 0.5%;
+    margin-left: 8px;
+    font-family:fantasy;
+    color:rgb(255, 255, 255);
+    
+    border-radius: 2px;
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    
+}
+a:hover{
+    color:rgb(0, 0, 0);
+}
+h1{
+    font-family:'demo','simplesth' ;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 50px;
+   
+}
+.box{
+    background-image: linear-gradient(to left, rgb(0, 75, 10), rgb(3, 213, 31), rgb(0, 57, 8));
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 21px;
+    padding-right: 21px ;
+    padding-bottom: 5px;
+    margin-top: -25px;
+    box-shadow: 5px 5px 5px rgba(0, 70, 9, 0.599);
+}
+nav>input{
+    margin-top: 10px;
+    
+    width: 20%;
+    border:none;
+    background: none;
+    border-bottom: 2px solid ;
+}
+nav>label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+main{
+    width: 60%;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(2, 138, 0, 0.579);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+html{
+    background-color: black;
+}
+p{
+    font-size: arial;
+    font-size: 1em;
+    text-align: justify;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+details{
+    list-style: none;
+}
