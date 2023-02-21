@@ -21,12 +21,18 @@
 }
 
 nav{
-    
-    text-align: end;
+    text-align: center;
     text-decoration: none;
-    margin-top: -20px;
-    padding-bottom: 5px;
-    
+    border: 1px solid black;
+    display: flex; 
+    flex-direction: column;
+    width: 90px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+    margin-left: 10px;
+    border-radius:5px ;
+    padding-bottom: 5px ;
     
     
     
@@ -34,10 +40,9 @@ nav{
 a{
     text-decoration: none;
     border: none;
-    padding: 0.5%;
     margin-left: 8px;
     font-family:fantasy;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     
     border-radius: 2px;
     
@@ -46,7 +51,8 @@ a{
     
 }
 a:hover{
-    color:rgb(0, 0, 0);
+    color:rgb(1, 183, 10);
+    background-color: rgb(229, 229, 229);
 }
 h1{
     font-family:'demo','simplesth' ;
@@ -65,13 +71,10 @@ h1{
     margin-right: -20px;
     padding-left: 21px;
     padding-right: 21px ;
-    padding-bottom: 5px;
     margin-top: -25px;
     box-shadow: 5px 5px 5px rgba(0, 70, 9, 0.599);
 }
 nav>input{
-    margin-top: 10px;
-    
     width: 20%;
     border:none;
     background: none;
@@ -94,9 +97,10 @@ html{
     background-color: black;
 }
 p{
-    font-size: arial;
+    font-size: arial, verdana, sans-serif;
     font-size: 1em;
     text-align: justify;
+    text-indent: 30px;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
@@ -105,3 +109,19 @@ h2{
 details{
     list-style: none;
 }
+div> nav> a{
+    display: none;
+}
+nav:hover> a{
+    display: block;
+}
+#text1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 50px;
+}
+div#pesquisar{
+    
+}
+
+
