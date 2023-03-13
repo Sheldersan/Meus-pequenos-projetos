@@ -101,8 +101,9 @@ body {
 }
 
 .input-box input {
-    margin:.6rem 0 ;
+    margin:0.6rem 0 ;
     padding: 0.8rem 1.2rem;
+    border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c ;
 }
@@ -112,4 +113,22 @@ body {
 }
 .input-box input:focus-visible {
     outline: 1px solid #6c63ff
+}
+
+.input-box label,
+.gender-title h6{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem; 
 }
