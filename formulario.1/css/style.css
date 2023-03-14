@@ -7,6 +7,8 @@
 :root{
     --cor0 : rgb( 20, 147, 220);
     --cor1 : rgb( 17, 54, 71);
+    --cor2 : rgb(0, 92, 197);
+    --cor3 : rgb(90,20,220);
 }
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -25,6 +27,15 @@ body{
 }
 .databox {
     padding: 15px 0;
+
+}
+
+#data {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 15px;
 }
 
 .conteiner {
@@ -51,7 +62,7 @@ fieldset {
     flex-direction: column;
     padding: 20px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
 }
@@ -62,7 +73,9 @@ fieldset {
     border:none;
     background-color: transparent;
     border-bottom: 1px solid rgb(114, 114, 114);
-    width: 90%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
     
 }
    
@@ -79,8 +92,25 @@ fieldset {
     transition: .5s;
 }
 
-.inputbox input:focus ~ .labelcima{
-    top: -20px;
+.inputbox input:focus ~ .labelcima,
+.inputbox input:valid ~ .labelcima {
+    top: -18px;
+    font-size: 12px;
+    color: var(--cor0);
+}
+
+#enviar {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+    width: 100%;
+    border:none;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#enviar:hover {
+    background-image: linear-gradient(to right, rgb(73, 0, 231), rgb(89, 18, 189));
 }
 
 
