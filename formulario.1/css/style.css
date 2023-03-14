@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+
+}
+:root{
+    --cor0 : rgb( 20, 147, 220);
+    --cor1 : rgb( 17, 54, 71);
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+}
+.inputbox {
+    padding-bottom:1.5rem ;
+}
+.generobox  {
+    display: flex;
+    padding: 15px 0 15px 0;
+    justify-content: space-around;
+}
+.generobox label {
+    
+}
+.databox {
+    padding: 15px 0;
+}
+
+.conteiner {
+    width: 100%;
+    padding: 2rem;
+}
+fieldset legend {
+    text-align: center;
+    border: 1px solid var(--cor0);
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: var(--cor0);
+}
+fieldset {
+    border: 2px solid var(--cor0);
+    margin:10px;
+    padding: 20px;
+}
+
+.box {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+}
+.inputbox {
+    position: relative;
+}
+.inputbox input{
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(114, 114, 114);
+    width: 90%;
+    
+}
+   
+.inputbox input:focus-visible {
+    outline: 1px var(--cor0) solid;
+    border:none;
+}
+
+.labelcima {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputbox input:focus ~ .labelcima{
+    top: -20px;
+}
+
+

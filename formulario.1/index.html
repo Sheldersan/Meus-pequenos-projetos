@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../formulario.1/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteiner">
+        <form action="">
+            <fieldset class="box">
+                <legend><strong>FORMULARIO DE CLINTES</strong></legend>
+            
+                <br>
+                <div class="inputbox">
+                    <input type="text" nome="nome" id="nome" required >
+                    <label for="nome" class="labelcima">Nome completo</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" nome="email" id="email" required>
+                    <label for="email" class="labelcima">E-mail</label>
+                </div>
+                <div class="inputbox">
+                    <input type="tel" nome="telefone" id="telefone" required>
+                    <label for="telefone" class="labelcima">Telefone</label>
+                </div>
+                <p>sexo</p>
+                <div class="generobox">
+                    
+                    <div class="genero">
+                        <input type="radio" id="feminino" nome="genero" value="feminino" required>
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="masculino" nome="genero" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="outro" nome="genero" value="outro" required>
+                        <label for="outro">Outro</label>
+                    </div>
+                </div>
+                <div class="databox">
+                    <strong><label for="data">Data de nascimento</label></strong>
+                    <input type="date" nome="data" id="data" required>
+                </div>
+                <div class="inputbox">
+                    <input type="text" nome="cidade" id="cidade" required>
+                    <label for="cidade" class="labelcima">Cidade</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" nome="estado" id="estado" required>
+                    <label for="estado" class="labelcima">Estado</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" nome="endereco" id="endereco" required>
+                    <label for="endereco" class="labelcima">Endereço</label>
+                </div>
+                <input type="submit" value="Enviar" id="Enviar">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
