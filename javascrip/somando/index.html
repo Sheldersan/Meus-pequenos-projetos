@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner {
+           
+        }
+        .somar{
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border: 1px solid rgb(193, 192, 192);
+            background-color: rgb(169, 169, 169);
+            padding: 40px;
+            box-shadow:  1px 1px 1px 0.80px rgb(189, 189, 189);
+            border-radius: 10px;
+        }
+        .somar p {
+            margin: 0;
+            color: white;
+            font-size: 1em;
+        }
+        #n1, #n2 {
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 18px;
+
+        }
+        .button-somar {
+           
+            margin-top: 5px;
+            width: 50px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="somar">
+            <input type="text" name="" id="n1">
+             <p>+</p>
+            <input type="text" name="" id="n2" >
+            <button onclick="somar()" value="somar" class="button-somar">somar</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <div>
+        <input type="number" name="" id="n3">
+        <p>+</p>
+        <input type="number" name="" id="n4" >
+        <button onclick="multiplicar()" class="button-mult" >Multiplicar</button>
+        <div> resultado:<span id="res"></span></div>
+    </div>
+
+
+    <script src="java.js"></script>
+
+</body>
+</html>

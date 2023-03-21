@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@100;200;300;400;500;600&family=Rubik+Vinyl&family=Sono:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+}
+header {
+    display: flex;
+    flex: 1 1 100vw;
+    background-image: linear-gradient(to left, rgba(255, 94, 0, 0.745),rgba(253, 125, 51, 0.603),rgba(247, 164, 116, 0.603));  
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Sono', sans-serif;
+    font-weight:bolder;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titulo h1 {
+    font-size: 3rem;
+    color: white;
+    
+}
+.titulo p {
+    font-size: 1.2rem;
+    color: white;
+}
+.header-input {
+    margin-top: 10px;
+}
+.header-input input{
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    width: 350px;
+    padding: 10px;
+    outline: none;
+}
+.header-input input:hover {
+    background-color: rgba(255, 255, 255, 0.873);
+}
+.header-input label {
+    position: absolute;
+   
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+nav {
+    display: flex;
+    flex: 1 1 100vw;
+    background-color: rgb(212, 212, 212);
+    height: 40px; 
+    justify-content: space-around;
+    padding-top: 10px;
+    font-family: 'Sono', sans-serif;
+}
+nav a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 0 20px ;
+}
+nav a:hover {
+    color: rgb(80, 80, 80);
+}
+main {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: darkgray;
+    height: 600px;
+    
+}
+aside {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: darkgray;
+    
+}
+footer {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: darkgray;
+}
