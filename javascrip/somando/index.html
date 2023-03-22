@@ -12,9 +12,10 @@
             box-sizing: border-box;
         }
         .conteiner {
-           
+           display: block;
         }
-        .somar{
+        .qua{
+            margin: 20px;
             max-width: 250px;
             display: flex;
             flex-direction: column;
@@ -25,48 +26,116 @@
             box-shadow:  1px 1px 1px 0.80px rgb(189, 189, 189);
             border-radius: 10px;
         }
-        .somar p {
+        .qua p {
             margin: 0;
             color: white;
             font-size: 1em;
         }
-        #n1, #n2 {
+        #n1, #n2,#n3,#n4 {
             border: none;
             outline: none;
             border-radius: 3px;
             font-size: 18px;
 
         }
-        .button-somar {
+        .button-somar, .button-mult {
            
             margin-top: 5px;
-            width: 50px;
+            width: 70px;
             border: none;
             cursor: pointer;
             border-radius: 10px;
             background-color: black;
             color: white;
         }
+        .mult{
+            padding: 40px;
+            max-width:250px ;
+            background-color: blue;
+            border-radius: 10px;
+
+
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 10px ;
+            color: white;
+            box-shadow: 0 0px 0px 5px rgba(210, 209, 209, 0.229) ;
+            font-size: 20px;
+        }
+        .input input {
+            font-size: 20px;
+            width: 70px;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .input {
+            padding: 10px;
+        }
+        .bottun button {
+            border: none;
+            padding: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        .bottun button:hover {
+            background-color: rgb(226, 226, 226);
+        }
+        .text1 {
+            text-decoration: underline red;
+            margin-top: 10px;
+        }
+        
+
+
+
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="somar">
+        <div class="qua">
             <input type="text" name="" id="n1">
-             <p>+</p>
+                <p>+</p>
             <input type="text" name="" id="n2" >
-            <button onclick="somar()" value="somar" class="button-somar">somar</button>
+            <button onclick="multiplicar()" value="somar" class="button-somar">Somar</button>
             <p id="resultado"></p>
         </div>
     </div>
 
-    <div>
-        <input type="number" name="" id="n3">
-        <p>+</p>
-        <input type="number" name="" id="n4" >
-        <button onclick="multiplicar()" class="button-mult" >Multiplicar</button>
-        <div> resultado:<span id="res"></span></div>
+    <div class="conteiner">
+        <div class="qua"> 
+            <input type="number" name="" id="n3">
+                <p>+</p>
+            <input type="number" name="" id="n4" >
+            <button onclick="somar()" class="button-mult" >Multiplicar</button>
+            <div> resultado:<span id="res"></span></div>
+        </div>
     </div>
+    <div class="box">
+        <div class="input">
+            <label for="idade">digite sua idade</label>
+            <input type="text" id="idade">
+        </div>
+        <div class="bottun">
+            <button onclick="verificaridade()">Verificar</button>
+            <div class="text1"><span id="res-idade"></span>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="java.js"></script>
